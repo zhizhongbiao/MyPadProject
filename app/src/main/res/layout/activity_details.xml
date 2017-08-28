@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110px"
+            android:src="@drawable/all_table" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:padding="10px"
+            android:text="全部展台"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0/0"
+            android:textColor="@color/textSuper"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110px"
+            android:padding="10px"
+            android:text="品牌介绍"
+            android:textColor="@color/textSuper"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_introduce"
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_introduce"
+            android:src="@drawable/brand_introduction" />
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <com.dcamp.pad.ui.basic.FlingRecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="1420px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_zan"
+            android:layout_width="340px"
+            android:layout_height="120px"
+            android:background="@drawable/like_press"
+            android:gravity="center_vertical"
+            android:paddingLeft="125px"
+            android:text="已赞0"
+            android:textColor="@color/colorFore" />
+
+    </LinearLayout>
+</me.winds.widget.autolayout.AutoLinearLayout>

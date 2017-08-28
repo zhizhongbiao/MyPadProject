@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="68px"
+    android:layout_marginRight="22px"
+    android:background="@drawable/shape_discount_activity_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/tvActivityFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:maxLines="1"
+        android:text="活动"
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvActivityFirst"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="30px"-->
+        <!--android:layout_marginRight="10px"-->
+        <!--android:maxLines="1"-->
+        <!--android:text="活动"-->
+        <!--android:textColor="#333333"-->
+        <!--android:textSize="30px" />-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="15px"-->
+        <!--android:layout_height="20px"-->
+        <!---->
+        <!--android:layout_marginRight="25px"-->
+        <!--android:src="@drawable/arrow"-->
+         <!--/>-->
+
+
+</me.winds.widget.autolayout.AutoLinearLayout>

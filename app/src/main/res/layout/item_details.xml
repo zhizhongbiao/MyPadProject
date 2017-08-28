@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1030px"
+    android:layout_height="1410px"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15px"
+        android:background="@drawable/shape_round_white">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="750px"
+            android:layout_height="820px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_image"
+            android:layout_marginLeft="43px"
+            android:layout_marginTop="80px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="620px"
+            android:text="我是名称"
+            android:textColor="@color/textSuper"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="27px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="620px"
+            android:text="我是描述"
+            android:textColor="@color/textMinor"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_desc"
+            android:layout_marginTop="55px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="620px"
+            android:text="￥100.00"
+            android:textColor="#e71c38"
+            android:textSize="58px" />
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="242px"
+            android:layout_height="242px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_image"
+            android:layout_marginRight="43px"
+            android:layout_marginTop="75px"
+            android:background="#008500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@id/tv_price"
+            android:layout_marginTop="45px"
+            android:background="#f8f8f8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45px"
+                android:text="正在参加的活动："
+                android:textColor="@color/textMain"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:src="@drawable/bargain_label" />
+</FrameLayout>

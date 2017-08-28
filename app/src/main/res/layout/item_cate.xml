@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<me.winds.widget.autolayout.widget.AutoCardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="285px"-->
+    <!--android:layout_height="285px"-->
+   <!---->
+    <!--app:cardCornerRadius="20px"-->
+    <!--app:layout_auto_basewidth="height">-->
+
+    <me.winds.widget.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:background="@drawable/table"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:text="1"
+            android:textColor="@color/textMain"
+            android:textSize="100px" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18px"
+            android:paddingRight="18px"
+            android:lines="2"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textLesser"
+            android:textSize="30px" />
+    </me.winds.widget.autolayout.AutoLinearLayout>
+
+<!--</me.winds.widget.autolayout.widget.AutoCardView>-->

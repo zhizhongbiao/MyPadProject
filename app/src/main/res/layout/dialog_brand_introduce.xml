@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_brand_introduce_bg">
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="89px"
+        android:layout_height="89px"
+        android:layout_alignParentRight="true"
+        app:layout_auto_basewidth="height"
+        android:padding="23px"
+        android:src="@drawable/close" />
+
+
+    <me.winds.widget.autolayout.AutoLinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73px"
+        android:layout_marginTop="7px"
+        android:gravity="center">
+
+        <View
+            android:layout_width="120px"
+            android:layout_height="1px"
+            android:layout_marginRight="30px"
+            android:background="#dfdfdf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌介绍"
+            android:textColor="@color/textSuper"
+            android:textSize="38px" />
+
+        <View
+            android:layout_width="120px"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:background="#dfdfdf" />
+
+
+    </me.winds.widget.autolayout.AutoLinearLayout>
+
+
+    <WebView
+        android:id="@+id/wvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTitle"
+        android:layout_marginBottom="110px"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px" />
+
+
+</me.winds.widget.autolayout.AutoRelativeLayout>

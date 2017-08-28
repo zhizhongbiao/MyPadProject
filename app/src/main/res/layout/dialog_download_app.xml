@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_brand_introduce_bg">
+
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="89px"
+        android:layout_height="89px"
+        android:layout_alignParentRight="true"
+        android:padding="23px"
+        android:src="@drawable/close"
+        app:layout_auto_basewidth="height" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivClose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76px"
+        android:layout_marginTop="47px"
+        android:text="手机下载APP"
+        android:textColor="@color/textLesser"
+        android:textSize="38px" />
+
+    <ImageView
+
+        android:id="@+id/ivQRCode"
+        android:layout_width="555px"
+        android:layout_height="555px"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82px"
+        android:src="@mipmap/app_qrcode"
+        app:layout_auto_basewidth="height" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivQRCode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_down_app_introduce_bg"
+        android:paddingBottom="26px"
+        android:paddingLeft="42px"
+        android:paddingRight="42px"
+        android:paddingTop="26px"
+        android:text="手机扫码立即下载手机版"
+        android:textColor="#ffffff"
+        android:textSize="34px" />
+
+
+</me.winds.widget.autolayout.AutoRelativeLayout>

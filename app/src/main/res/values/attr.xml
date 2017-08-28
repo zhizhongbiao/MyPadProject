@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlideDetailsLayout">
+        <attr name="percent" format="float" />
+        <attr name="duration" format="integer" />
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0" />
+            <enum name="behind" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ImageDotView">
+        <attr name="image_dot_src" format="reference" />
+        <attr name="image_dot_visible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NormalImageView">
+        <attr name="normal_image_src" format="reference" />
+        <attr name="normal_image_text" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleImageView">
+        <attr name="simple_image_src" format="reference" />
+        <attr name="simple_image_name" format="reference|string" />
+        <attr name="simple_image_flag" format="reference|string" />
+        <attr name="simple_image_unit" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="90px"
+    android:paddingLeft="15px"
+    android:paddingRight="15px">
+
+    <ImageView
+        android:id="@+id/title_iv_left"
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:padding="15px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_return" />
+
+    <TextView
+        android:id="@+id/title_tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/title_iv_left"
+        android:gravity="center"
+        android:padding="15px"
+        android:textColor="@color/textMain"
+        android:textSize="28px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minWidth="400px"
+        android:textColor="@color/textSuper"
+        android:textSize="36px" />
+
+    <ImageView
+        android:id="@+id/title_iv_right"
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="15px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/title_tv_center"
+        android:layout_toLeftOf="@id/title_iv_right"
+        android:gravity="center"
+        android:paddingTop="15px"
+        android:paddingRight="15px"
+        android:paddingLeft="15px"
+        android:textColor="@color/textMain"
+        android:textSize="28px"
+        android:visibility="gone"
+         />
+</com.zhy.autolayout.AutoRelativeLayout>

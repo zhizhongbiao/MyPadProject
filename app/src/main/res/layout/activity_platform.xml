@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal">
+
+    <me.winds.widget.autolayout.AutoRelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <me.winds.widget.autolayout.AutoLinearLayout
+            android:id="@+id/llAllTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20px">
+
+
+            <ImageView
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_marginRight="9px"
+                android:src="@drawable/all_table" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部展台"
+                android:textColor="#e0000000"
+                android:textSize="32px" />
+
+
+        </me.winds.widget.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvPageIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="110px"
+            android:text="0/0"
+            android:textColor="#e0000000"
+            android:textSize="36px" />
+
+    </me.winds.widget.autolayout.AutoRelativeLayout>
+
+
+    <me.winds.widget.autolayout.AutoFrameLayout
+        android:id="@+id/flVpWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flLike"
+        android:layout_below="@+id/rlTitle"
+        android:clickable="true"
+        android:clipChildren="false">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="180px"
+            android:layout_marginRight="180px"
+            android:clipChildren="false"
+            android:overScrollMode="never">
+
+        </android.support.v4.view.ViewPager>
+
+    </me.winds.widget.autolayout.AutoFrameLayout>
+
+
+    <me.winds.widget.autolayout.AutoFrameLayout
+        android:id="@+id/flLike"
+        style="@style/LikeStyle"
+        android:layout_width="356px"
+        android:layout_height="136px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105px"
+        android:layout_marginTop="28px">
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="90px"
+            android:layout_marginRight="5px"
+            android:layout_marginTop="5px"
+            android:gravity="center"
+            android:text="已赞0"
+            android:textColor="#FFFFFF"
+            android:textSize="42px" />
+
+
+    </me.winds.widget.autolayout.AutoFrameLayout>
+
+
+</me.winds.widget.autolayout.AutoRelativeLayout>

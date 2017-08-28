@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <ImageView
+        android:layout_width="446px"
+        android:layout_height="69px"
+        android:layout_marginLeft="135px"
+        android:layout_marginTop="100px"
+        android:src="@drawable/welcome_to_dcamp" />
+
+
+    <ImageView
+        android:id="@+id/ivDownloadApp"
+        android:layout_width="76px"
+        android:layout_height="85px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="135px"
+        android:layout_marginTop="100px"
+        android:padding="20px"
+        android:src="@drawable/app_download" />
+
+
+    <GridView
+        android:id="@+id/gvSubjectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivDownloadApp"
+        android:layout_marginBottom="110px"
+        android:layout_marginLeft="110px"
+        android:layout_marginRight="110px"
+        android:layout_marginTop="85px"
+        android:horizontalSpacing="60px"
+        android:numColumns="4"
+        android:scrollIndicators="none"
+        android:scrollbarSize="0px"
+        android:verticalSpacing="60px" />
+
+
+</me.winds.widget.autolayout.AutoRelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LoadingProgressBarStyle">
+        <item name="android:indeterminateDrawable">@drawable/ani_list_loading</item>
+        <item name="android:minWidth">200px</item>
+        <item name="android:minHeight">136px</item>
+        <item name="android:maxWidth">200px</item>
+        <item name="android:maxHeight">136px</item>
+    </style>
+
+
+    <style name="LikeStyle">
+       <item name="android:background">@drawable/like_press</item>
+
+
+    </style>
+
+</resources>

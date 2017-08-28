@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.winds.widget.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1178px"
+    android:layout_height="1586px"
+    android:layout_gravity="center"
+    android:background="@drawable/frame">
+
+
+    <ImageView
+        android:id="@+id/ivGood"
+        android:layout_width="match_parent"
+        android:layout_height="1054px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="62px"
+        android:layout_marginTop="62px"
+
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_auto_baseheight="width" />
+
+
+    <TextView
+        android:id="@+id/tvGoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivGood"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="20px"
+        android:layout_toLeftOf="@+id/ivQRCode"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Iphone7好的旧时的就fretrtt是打即可"
+        android:textColor="#000000"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/tvGoodDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvGoodName"
+        android:layout_marginLeft="62px"
+        android:layout_toLeftOf="@+id/ivQRCode"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Iphone7好的旧时的就是打即可"
+        android:textColor="#666666"
+        android:textSize="36px" />
+
+
+    <TextView
+        android:id="@+id/tvGoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvGoodDesc"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="42px"
+        android:layout_toLeftOf="@+id/ivQRCode"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="7999.00"
+        android:textColor="#e71c38"
+        android:textSize="70px" />
+
+
+    <ImageView
+        android:id="@+id/ivQRCode"
+        android:layout_width="279px"
+        android:layout_height="279px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivGood"
+        android:layout_gravity="center"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="62px"
+        android:src="@mipmap/ic_launcher"
+        app:layout_auto_baseheight="width" />
+
+
+    <TextView
+        android:id="@+id/tvActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGoodPrice"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="60px"
+        android:maxLines="1"
+        android:text="正在参与活动："
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGoodPrice"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="43px"
+        android:layout_toRightOf="@+id/tvActivity" />
+
+
+    <ImageView
+        android:id="@+id/ivBargain"
+        android:layout_width="243px"
+        android:layout_height="243px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="14px"
+        android:elevation="500px"
+        android:src="@drawable/bargain_label"
+        app:layout_auto_baseheight="width" />
+
+
+</me.winds.widget.autolayout.AutoRelativeLayout>
